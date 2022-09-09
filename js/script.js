@@ -146,6 +146,7 @@ function handleOnLoad() {
         perPageSelect.value = window.perPage;
 
         perPageSelect.addEventListener("change", (e) => {
+            window.currentPage = 1;
             window.perPage = parseInt(e.target.value);
             handleFilter();
         });
