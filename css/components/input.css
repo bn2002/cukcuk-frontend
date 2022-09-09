@@ -1,0 +1,110 @@
+/* input icon */
+.input-group {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    border: 1px solid #e9ebee;
+    width: auto;
+    padding-left: 16px;
+    border-radius: 4px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.input-group .input__icon {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.input-group .input__control {
+    border: none;
+    outline: none;
+    width: 80%;
+}
+
+.input__control::placeholder {
+    color: #bbb;
+    font-size: 12px;
+}
+
+/* Input thuong */
+
+.input__label {
+    padding-bottom: 4px;
+    display: block;
+    font-size: 13px;
+    color: #000;
+    font-family: GoogleSans Regular;
+}
+
+.input__control {
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    height: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: inline-block;
+    width: 100%;
+    font-size: 13px;
+    height: 40px;
+}
+
+.input__control:focus {
+    border-color: #019160;
+}
+
+
+/* Check box */
+.checkbox {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 12px;
+}
+
+.checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkbox__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox:hover .checkbox__checkmark {
+    background-color: #eee;
+}
+
+.checkbox input:checked ~ .checkbox__checkmark {
+    background-color: #01B075;
+    border: none;
+}
+
+.checkbox__checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox input:checked ~ .checkbox__checkmark::after {
+    display: block;
+}
+
+.checkbox__checkmark::after {
+    left: 8px;
+    top: 2px;
+    width: 4px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}

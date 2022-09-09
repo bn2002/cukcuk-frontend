@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: GoogleSans Regular, sans-serif;
+}
+
+@font-face {
+    font-family: GoogleSans;
+    src: url(../assets/font/GoogleSans-Thin.otf);
+}
+
+@font-face {
+    font-family: GoogleSans Regular;
+    src: url(../assets/font/GoogleSans-Regular.otf);
+}
+
+@font-face {
+    font-family: GoogleSans Black;
+    src: url(../assets/font/GoogleSans-Black.otf);
+}
+
+@font-face {
+    font-family: GoogleSans Bold;
+    src: url(../assets/font/GoogleSans-Bold.otf);
+}
+
+@font-face {
+    font-family: GoogleSans Medium;
+    src: url(../assets/font/GoogleSans-Medium.otf);
+}
+
+
+@font-face {
+    font-family: GoogleSans Italic;
+    src: url(../assets/font/GoogleSans-Italic.otf);
+}
+
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block;
+}
+
+.disabled {
+    cursor: not-allowed !important;
+    pointer-events: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input, select {
+    outline: none;
+    border: none;
+}
+
+.mt-4 {
+    margin-top: 16px;
+}
+
+.mb-2 {
+    margin-bottom: 2px;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.color-red {
+    color: red;
+}

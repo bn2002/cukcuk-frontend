@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/components/combobox.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link
+            rel="stylesheet"
+            href="../assets/font/fontawesome-5.15.1/css/all.min.css" />
+
+        <title>Button</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mt-4">
+                <h3>IV. COMBO BOX</h3>
+                <div class="combobox mt-4" id="combobox" style="width: 300px">
+                    <div class="combobox__select">
+                        <span class="combobox__hint">Chọn/nhập thông tin</span>
+                        <i class="fas fa-chevron-down combobox__left-icon"></i>
+                    </div>
+
+                    <div class="combobox__content">
+                        <div class="combobox__search">
+                            <i class="fas fa-search"></i>
+                            <input
+                                type="text"
+                                spellcheck="false"
+                                placeholder="Search" />
+                        </div>
+                        <ul class="combobox__list">
+                            <li class="combobox__item">Trạng thái 1</li>
+                            <li class="combobox__item">Trạng thái 2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script defer src="../js/components/combobox.js"></script>
+        <!-- <script defer src="../js/script.js"></script> -->
+    </body>
+</html>

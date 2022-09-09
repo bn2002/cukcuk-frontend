@@ -1,0 +1,134 @@
+.screen_close {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 999;
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 800px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.modal__section {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.modal__section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #019160;
+    height: 3px;
+    width: 70px;
+    bottom: -4px;
+    left: 0;
+
+}
+
+.modal__header {
+    margin: 24px 24px 0;
+}
+
+.modal__title {
+    font-family: GoogleSans;
+    text-transform: uppercase;
+}
+
+.modal__close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    padding: 6px 8px;
+    cursor: pointer;
+    border-bottom-left-radius: 4px;
+}
+
+.modal:hover .modal__close {
+    background-color: #e9e9e9;
+}
+
+.modal:hover .btn--default {
+    background-color: #E5E5E5;
+}
+
+.modal__body {
+    padding: 24px 24px;
+}
+
+.modal__footer {
+    height: 60px;
+    background-color: #F4F4F4;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row-reverse;
+    padding: 12px 24px;
+}
+
+.modal__footer .btn {
+    height: 36px;
+    margin-left: 40px;
+}
+
+/* Modal notify */
+
+.modal-notify {
+    height: unset;
+    min-height: 200px;
+    width: unset;
+    min-width: 350px;
+    max-width: 450px;
+}
+
+.modal-notify .btn {
+    height: 40px;
+    margin-left: 16px;
+}
+
+.modal-notify .modal__footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.modal-notify .modal__title {
+    text-transform: unset;
+    font-family: GoogleSans Regular;
+    font-size: 16px;
+}
+
+.notify {
+    display: flex;
+    align-items: center;
+}
+.notify__icon {
+    display: inline-block;
+    background-color: #F4F4F4;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.notify__text {
+    font-size: 14px;
+}
+
+.notify--danger .notify__icon {
+    color: #EA2B2B;
+}

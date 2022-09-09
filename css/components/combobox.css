@@ -1,0 +1,114 @@
+.combobox {
+    width: 100%;
+    position: relative;
+} 
+
+.combobox__label {
+    font-size: 13px;
+    color: #000;
+    font-family: GoogleSans Medium;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.combobox__btn {
+    border-left: 1px solid #e9ebee;
+    background-color: #fff;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    min-width: unset;
+    height: 100%;
+}
+
+.combobox__btn > i{
+    font-size: 16px;
+    color: #000;
+}
+
+.combobox__btn:hover {
+    background-color: unset;
+}
+
+
+.combobox__list {
+    list-style-type: none;
+    margin-top: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+.combobox__item {
+    width: 100%;
+    padding-left: 36px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.combobox__item:hover {
+    background-color: #e9ebee;
+}
+
+.combobox__item--active.combobox__item:hover {
+    background-color: #019160;
+}
+.combobox__item--active {
+    background-color: #019160;
+    color: #fff;
+}
+.combobox__item.combobox__item--active {
+    padding-left: 10px;
+}
+
+.combobox__item--active > i{
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+/* New combobox */
+
+ .combobox__select {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #e9ebee;
+    padding-left: 16px;
+    border-radius: 4px;
+    height: 40px;
+    position: relative;
+}
+
+.combobox__select--active {
+    border-color: #019160;
+}
+
+.combobox__btn--active {
+    border-color: #019160;
+    background-color: #e5e5e5;
+}
+
+.combobox__list--active {
+    display: block;
+}
+
+.combobox__value {
+    flex: 1;
+    font-size: 11px;
+    color: #bbb;
+    font-family: GoogleSans Regular;
+}
+
+.combobox__value--active {
+    color: #000;
+}  
