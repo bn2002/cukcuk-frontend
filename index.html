@@ -19,11 +19,6 @@
             window.perPage = 25;
             window.currentPage = 1;
         </script>
-        {% if site.GH_ENV == 'gh_pages' %}
-            <script>
-                window.rootApi = "https://cukcuk-doanhnd.herokuapp.com/api";
-            </script>
-        {% endif %}
         <title>CukCuk</title>
     </head>
     <body onload="handleOnLoad()">
